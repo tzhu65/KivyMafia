@@ -1,0 +1,74 @@
+# This file acts as an interface for all the screen widgets
+
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+<ScreenManager>:
+
+    # Have access to screens
+    startup: 'startup_screen'
+    main_menu: 'main_menu_screen'
+    settings: 'settings_screen'
+    create_lobby: 'create_lobby_screen'
+    role_setup: 'role_setup_screen'
+    lobby_list: 'lobby_list_screen'
+    lobby: 'lobby_screen'
+    game: 'game_screen'
+
+    # Default transition
+    transition: FadeTransition()
+
+    # List of screens
+    StartupScreen:
+    MainMenuScreen:
+    SettingsScreen:
+    CreateLobbyScreen:
+    RoleSetupScreen:
+    LobbyListScreen:
+    LobbyScreen:
+    GameScreen:
+
+
+<StartupScreen>:
+    id: 'startup_screen'
+    name: 'startup_screen'
+    Startup:
+
+
+<MainMenuScreen>:
+    id: 'main_menu_screen'
+    name: 'main_menu_screen'
+    MainMenu:
+
+
+<SettingsScreen>:
+    id: 'settings_screen'
+    name: 'settings_screen'
+    Settings:
+
+
+<CreateLobbyScreen>:
+    id: 'create_lobby_screen'
+    name: 'create_lobby_screen'
+    CreateLobby:
+
+<RoleSetupScreen>:
+    id: 'role_setup_screen'
+    name: 'role_setup_screen'
+    RoleSetup:
+
+<LobbyListScreen>:
+    id: 'lobby_list_screen'
+    name: 'lobby_list_screen'
+    LobbyList:
+
+
+<LobbyScreen>:
+    id: 'lobby_screen'
+    name: 'lobby_screen'
+    Lobby:
+
+
+<GameScreen>:
+    id: 'game_screen'
+    name: 'game_screen'
+    Game:
